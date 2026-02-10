@@ -1,18 +1,8 @@
 "use client";
 
 import { useRef, useState } from "react";
+import MainLayout from "@/components/MainLayout";
 import Splash from "@/components/Splash";
-
-function MainPlaceholder() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans">
-      <main className="text-center">
-        <h1 className="text-2xl font-semibold text-zinc-900">Birthday</h1>
-        <p className="mt-2 text-zinc-600">Single-page experience — one URL.</p>
-      </main>
-    </div>
-  );
-}
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -25,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      {showSplash ? <Splash onEnter={handleEnter} /> : <MainPlaceholder />}
+      {showSplash ? <Splash onEnter={handleEnter} /> : <MainLayout />}
       <audio ref={audioRef} src="/birthday/music.mp3" loop className="hidden" />
     </>
   );
