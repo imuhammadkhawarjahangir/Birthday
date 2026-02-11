@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate-assets": "node scripts/generate-birthday-assets.cjs",
+    "predev": "node scripts/generate-birthday-assets.cjs",
     "dev": "next dev",
+    "prebuild": "node scripts/generate-birthday-assets.cjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

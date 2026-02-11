@@ -2,3 +2,6 @@ node_modules
 .next
 out
 .planning/
+
+# Auto-generated asset list (regenerated on build/dev)
+src/lib/birthday-assets.generated.ts
