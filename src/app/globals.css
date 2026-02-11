@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Entrance animation for main view (Phase 6 / UX-01) */
+@keyframes collageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.collage-entrance {
+  animation: collageFadeIn 0.4s ease-out forwards;
+}
+
+.collage-slot-entrance {
+  opacity: 0;
+  animation: collageFadeIn 0.3s ease-out forwards;
+}
